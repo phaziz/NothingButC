@@ -1,19 +1,9 @@
-/*
- ============================================================================
- Name        : MehrDimArray.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
 #define ARBEITER 3
 #define TAGE 5
-//Dekalration vom Array Zeitkonnto mit 3 Zeilen und 5 Spalten
+
 int zeitkonto[ARBEITER][TAGE];
 
 void error(int n) {
@@ -114,7 +104,7 @@ void ArbeiterStundenUebersicht(void)
       return;
    }
    printf("Arbeiter Nr.%d hat am Tag %d : ", arb, tag);
-   //zeitkonto[arb-1][tag-1] direkter Zugriff auf das gewünschte Feld
+   //zeitkonto[arb-1][tag-1] direkter Zugriff auf das gewÃ¼nschte Feld
    printf("%d Stunden gearbeitet!\n\n", zeitkonto[arb-1][tag-1]);
 }
 
