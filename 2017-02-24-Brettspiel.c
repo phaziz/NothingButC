@@ -1,19 +1,9 @@
-/*
- ============================================================================
- Name        : Brettspiel.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
 char brett[8][8];  //1. Dimension 8 Zeilen, 2 Dimension 8 Spalten
 
-//initialisiert das Spielfeld und befüllt die Felder mit dem Buchstaben O
+//initialisiert das Spielfeld und befÃ¼llt die Felder mit dem Buchstaben O
 void init(void)
 {
 	for(int zeile=0;zeile<8;zeile++)
@@ -25,7 +15,7 @@ void init(void)
 	}
 }
 
-//Abfrage der Zeilennummer auf die der Spieler sein Spielstein setzen möchte
+//Abfrage der Zeilennummer auf die der Spieler sein Spielstein setzen mÃ¶chte
 int zeile(void)
 {
 	int z;
@@ -35,7 +25,7 @@ int zeile(void)
 	return z;
 }
 
-//Abfrage der Spaltennummer auf die der Spieler sein Spielstein setzen möchte
+//Abfrage der Spaltennummer auf die der Spieler sein Spielstein setzen mÃ¶chte
 int spalte(void)
 {
 	int s;
@@ -45,7 +35,7 @@ int spalte(void)
 	return s;
 }
 
-//Ermittelt den Gewinnstand bzw. ob vier gleiche Spieltsteine senkrecht oder waagerecht zusammenhängend liegen
+//Ermittelt den Gewinnstand bzw. ob vier gleiche Spieltsteine senkrecht oder waagerecht zusammenhÃ¤ngend liegen
 int erg(int sp)
 {
 	char zeichen;
