@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : konto.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,6 +23,6 @@ int main(void) {
 
 	printf("Die Kontonummer ist: %d\n", konto1.kontonummer);
 	printf("Kontoinhaber ist: %s %s\n", konto1.vorname, konto1.name);
-	printf("Das Guthaben beträgt: %.2lf\n",konto1.guthaben);
+	printf("Das Guthaben betrÃ¤gt: %.2lf\n",konto1.guthaben);
 	return EXIT_SUCCESS;
 }
