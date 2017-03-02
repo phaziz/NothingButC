@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : RueckgabeStruktur.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 struct adresse
@@ -32,7 +22,7 @@ void ausgabe(struct adresse *struct_ptr)
 struct adresse *eingabe(void)
 {
 	static struct adresse *adressen;
-	//malloc() reserviert Speicher Parameter=Speichergröße, Rückgaberwert = Startadresse des res. Speichers
+	//malloc() reserviert Speicher Parameter=SpeichergrÃ¶ÃŸe, RÃ¼ckgaberwert = Startadresse des res. Speichers
 	adressen = malloc(sizeof(struct adresse));
 	printf("Vorname: ");
 	fgets(adressen->vname,30,stdin);
