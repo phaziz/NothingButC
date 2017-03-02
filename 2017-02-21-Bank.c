@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : Bank.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,7 +13,7 @@ int menuAnzeigen(void)
 	printf("1 Neues Konto anlegen\n");
 	printf("2 alle Konten anzeigen\n");
 	printf("3 Programm beenden\n");
-	printf("Bitte wählen Sie einen entsprechenden Menüpunkt:");
+	printf("Bitte wÃ¤hlen Sie einen entsprechenden MenÃ¼punkt:");
 	scanf("%d", &auswahl);
 	fflush(stdin);
 	return auswahl;
@@ -45,7 +35,7 @@ void alleKontenAnzeigen(void)
 	}
 }
 int main(void) {
-	setbuf(stdout, NULL); //Ausgabebuffer ausschalten
+	setbuf(stdout, NULL);
 	int auswahl;
 
 	do
@@ -62,7 +52,7 @@ int main(void) {
 		case 3:
 			break;
 		default:
-			printf("Wählen Sie einen gültigen Menüpunkt");
+			printf("WÃ¤hlen Sie einen gÃ¼ltigen MenÃ¼punkt");
 		}
 	}while(auswahl!=3);
 	return EXIT_SUCCESS;
