@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : Hangman.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -57,7 +47,7 @@ int main(void) {
 		}
 		if(unterstrich==0)
 		{
-			printf("Herzlichen Glückwunsch du hast gewonnen!");
+			printf("Herzlichen GlÃ¼ckwunsch du hast gewonnen!");
 			break;
 		}
 		else
