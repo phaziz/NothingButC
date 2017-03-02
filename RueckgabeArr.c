@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : RueckgabeArr.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -39,7 +29,7 @@ int main(void) {
 
 	struct array new_array;
 
-	//Array als Rückgabewert in einer Struktur verschachtelt
+	//Array als RÃ¼ckgabewert in einer Struktur verschachtelt
 	new_array=init_array();
 	//Call-by-value
 	output_array(new_array);
