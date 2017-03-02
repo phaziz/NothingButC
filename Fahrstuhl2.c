@@ -1,20 +1,10 @@
-/*
- ============================================================================
- Name        : Fahrstuhl2.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void) {
 	setbuf(stdout, NULL); //Ausgabebuffer ausschalten
 	int etage;
-	printf("Drücken Sie die Taste für Ihre Etage:");
+	printf("DrÃ¼cken Sie die Taste fÃ¼r Ihre Etage:");
 	scanf("%d", &etage);
 
 
@@ -39,7 +29,7 @@ int main(void) {
 		printf("Etage 5\n");
 		break;
 	default:
-		printf("keine gültige Etage\n");
+		printf("keine gÃ¼ltige Etage\n");
 		break;
 	}
 
