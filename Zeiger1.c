@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : Zeiger1.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,7 +8,7 @@ int main(void) {
 
 	printf("Adresse x=%p Wert x=%d\n", &x, x);
 
-	printf("Adresse *y=%p, Wert *y=%d (Unsinn)\n", &y, *y); //ggf. auskommentieren führt bei manchen Systemn zu Programmabstürzen
+	printf("Adresse *y=%p, Wert *y=%d (Unsinn)\n", &y, *y); //ggf. auskommentieren fÃ¼hrt bei manchen Systemn zu ProgrammabstÃ¼rzen
 	printf("\ny=&x;\n\n");
 
 	y=&x;
