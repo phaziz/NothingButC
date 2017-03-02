@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : ArrayFunkt.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -36,14 +26,14 @@ void funktion(int feld[], int MAX)
 
 void output_array(struct array z)
 {
-	printf("\nÜbergabe als Struktur vorher\n");
+	printf("\nÃœbergabe als Struktur vorher\n");
 	for(int i=0;i<sizeof(struct array)/sizeof(int);i++)
 	{
 		printf("%d\t",z.wert[i]);
 		z.wert[i]=z.wert[i]+1;
 	}
 
-	printf("\nÜbergabe als Struktur nacher\n");
+	printf("\nÃœbergabe als Struktur nacher\n");
 	for(int i=0;i<sizeof(struct array)/sizeof(int);i++)
 	{
 		printf("%d\t",z.wert[i]);
@@ -64,7 +54,7 @@ int main(void) {
 		printf("%d; ", val[i]);
 	}
 
-	//Call-by-Reference --> Übergabe einer Referenz auf das Element
+	//Call-by-Reference --> Ãœbergabe einer Referenz auf das Element
 	funktion(val,10);
 	printf("nach der Funkt\n");
 		for(int i=0;i<10;i++)
@@ -76,14 +66,14 @@ int main(void) {
 	new_array.wert[0]=10;
 	new_array.wert[1]=20;
 	new_array.wert[2]=30;
-	printf("\nvor der Strukturübergabe\n");
+	printf("\nvor der StrukturÃ¼bergabe\n");
 	for(int i=0;i<3;i++)
 	{
 		printf("%d; ", new_array.wert[i]);
 	}
-	//Call-by-Value --> Übergabe einer Kopie des Elementes
+	//Call-by-Value --> Ãœbergabe einer Kopie des Elementes
 	output_array(new_array);
-	printf("nach der Strukturübergabe\n");
+	printf("nach der StrukturÃ¼bergabe\n");
 	for(int i=0;i<3;i++)
 	{
 		printf("%d; ", new_array.wert[i]);
