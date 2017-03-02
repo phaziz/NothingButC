@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : Zeiger.c
- Author      : René Schülke
- Version     :
- Copyright   : 
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
